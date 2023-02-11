@@ -10,7 +10,7 @@ import { Sidebar } from "./Sidebar";
 
 import { useState } from "react";
 const Container = styled.div`
-  background-color: #5b40bb;
+  background-color: #080101eb;
   height: 60px;
   color: white;
   display: flex;

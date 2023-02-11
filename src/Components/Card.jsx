@@ -12,7 +12,7 @@ const Container=styled.div`
     align-items: center;
     background-color: ${props=>props.backgroundColor};
     width: 25%;
-    height: 60vh;
+    height: auto;
   //  max-height: 40vh;
     border-radius: 1rem 0 1rem 0;
     margin: 1rem;
@@ -33,6 +33,7 @@ const TextCont=styled.div`
   //  border: 1pt solid black;
     width: 90%;
     align-items: center;
+    
 `
 const Text=styled.h1`
     color: ${props=>props.color};
