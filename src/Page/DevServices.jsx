@@ -5,6 +5,7 @@ import Headimage from '../Images/devimg.jpg'
 import App from '../Images/appdev.png'
 import Icon from '../Images/sidedesign.png'
 import Webapp from '../Images/webapp.png'
+
 const Section=styled.div`
     height: auto;
     min-height: 110vh;
@@ -115,8 +116,7 @@ const Words=styled.div`
 const data=[
     {id:1,head:"Mobile Development",paragraph:"With expertise in the latest technologies and a user-centered design approach, we build high-quality, intuitive, and engaging mobile applications for iOS, Android, and the web. Our process is agile, allowing us to quickly iterate and refine your app until it exceeds your expectations.whether you're looking to increase productivity, streamline operations, or launch the next big thing.",image:App},
     {id:2,head:"Web Development",paragraph:"At Develoopers, we are dedicated to providing the best web development solutions to our clients. Our team of experienced developers is skilled in creating customized websites and web applications that meet the unique needs of each business.",image:Webapp},
-    {id:3,head:"Web Development",paragraph:"At Develoopers, we are dedicated to providing the best web development solutions to our clients. Our team of experienced developers is skilled in creating customized websites and web applications that meet the unique needs of each business.",image:Webapp}
-
+    
 ]
 const Services = () => {
   return (

@@ -13,11 +13,13 @@ const Container=styled.div`
     background-color: ${props=>props.backgroundColor};
     width: 25%;
     height: auto;
-  //  max-height: 40vh;
+    min-height: 60vh;
     border-radius: 1rem 0 1rem 0;
     margin: 1rem;
     position: relative;
     overflow: hidden;
+ 
+    
 
 `
 const Image=styled.img`
@@ -33,6 +35,8 @@ const TextCont=styled.div`
   //  border: 1pt solid black;
     width: 90%;
     align-items: center;
+    text-align: center;
+
     
 `
 const Text=styled.h1`
@@ -63,6 +67,9 @@ const Link=styled.a`
 const BlueDiv=styled.div`
   background-color: #1a9cc7;
   height: ${props=>props.height};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   top: 0px;
   transition: 0.5s ease;
@@ -76,9 +83,9 @@ export const Card = (props) => {
     <>
     
     <Container  onMouseEnter={()=>{setBlue(true)}} onMouseLeave={()=>{setBlue(false)}} backgroundColor="white">
-        {blue ? <BlueDiv height="100%" >
+        {blue ? <BlueDiv height="100vh" >
         <Image src={props.logo}/>
-        <TextCont style={{marginLeft:"1.3rem"}}>
+        <TextCont style={{alignItems:"center"}}>
         <Text color='white'>{props.name}</Text>
         <Paragraph color='white'>{props.des}</Paragraph>
         </TextCont>

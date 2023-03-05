@@ -5,12 +5,15 @@ import {HiSearch} from 'react-icons/hi'
 import {HiViewList} from 'react-icons/hi'
 import { Link } from "react-router-dom";
 import { mobile } from "../Page/Responsive";
+import Logo from '../Images/logo.png'
 
 import { Sidebar } from "./Sidebar";
 
 import { useState } from "react";
+
+
 const Container = styled.div`
-  background-color: #080101eb;
+  background-color: black;
   height: 60px;
   color: white;
   display: flex;
@@ -63,8 +66,9 @@ const Input = styled.input`
 const Heading= styled.h1`
   font-weight: bold;
   font-family: san-serif;
+  margin-right: 1rem;
   ${mobile({fontSize:"24px"})}
-
+  color: ${props=>props.color};
 `
 const Para= styled.p`
  font-size: 16px;
@@ -72,6 +76,10 @@ const Para= styled.p`
  padding: 10px;
  ${mobile({display:"none"})}
 
+`
+const LogoImg=styled.img`
+  width: 20%;
+  margin-bottom: 0.5rem;
 `
 
 
@@ -86,18 +94,22 @@ const Navbar = () => {
     <>
     <Container>
       <Right>
-        
+        <LogoImg src={Logo}/>
         <HiViewList style={{fontSize:"20px",margin:"0px 5px 2px 10px"} } className="Nav" onClick={()=>{setOpenside(!openside)}}/>
         <Para className="EN">EN</Para>
       <Input/>
       <HiSearch className="Search" fontSize="24px" />
       </Right>
       <Center>
-        <Heading>Expo Store.</Heading>
+      <div style={{display:"flex"}}><Heading color="aqua">Tech </Heading><Heading>Develoopers</Heading></div>
       </Center>
       <Left>
-        <Para>REGISTER</Para>
-        <Para>SIGN IN</Para>
+        <Para><Link style={{textDecoration:"none",color:"white"}} to={"/"}>HOME</Link></Para>
+        <Para><Link style={{textDecoration:"none",color:"white"}} to={"Aboutus"}>ABOUT US</Link></Para>
+        <Para><Link style={{textDecoration:"none",color:"white"}} to={"Team"}>TEAM</Link></Para>
+        <Para><Link style={{textDecoration:"none",color:"white"}} to={"Services"}>SERVICES</Link></Para>
+        <Para><Link style={{textDecoration:"none",color:"white"}} to={"Contact"}>CONTACT US</Link></Para>
+     
 
       </Left>
     </Container>

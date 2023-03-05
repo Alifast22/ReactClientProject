@@ -56,9 +56,9 @@ function Example(props)
 function Item(props)
 {
     return (
-        <Paper style={{border:"1pt solid black",height:"50vh",backgroundColor:"rgba(50, 26, 114, 0.548)",position:"relative",display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <Paper style={{border:"1pt solid black",height:"50vh",backgroundColor:" rgb(4, 17, 59)",position:"relative",display:"flex",alignItems:"center",justifyContent:"center"}}>
            <Container>
-            <img src={props.item.image} style={{height:"20vh",width:"20wh",border:"0.5rem solid rgba(49, 26, 114, 0.801)",borderRadius:"80px",marginTop:"1.5rem"}}/>
+            <img src={props.item.image} style={{height:"20vh",width:"20wh",border:"0.5rem solid rgb(68, 5, 87)",borderRadius:"80px",marginTop:"1.5rem"}}/>
             <p style={{color:"white"}}>{props.item.name}</p>
             </Container>
           <CommCont><TriangleDiv/>{props.item.comment}</CommCont> 

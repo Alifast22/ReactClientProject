@@ -77,7 +77,7 @@ const Footer = () => {
     <Wrapper><MdPhone color='#bbb7b7' fontSize="1.5rem" style={{margin:"0 0.5rem 0 0"}}/><Text>+92-3313226743</Text>  </Wrapper>  
     </Box>
      </TextCont> 
-     <EndDiv>© Copyright CORE 2022. All Right Reserved.</EndDiv>
+     <EndDiv>© Copyright DEVELOOPERS 2023. All Right Reserved.</EndDiv>
     </Container>
   )
 }

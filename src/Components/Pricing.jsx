@@ -14,6 +14,9 @@ const BoxBasic=styled.div`
     height: 60vh;
     width: 60vh;
     border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const BoxRegular=styled.div`
     box-shadow: 0px 0px 20px -8px #fffafabf;
@@ -21,6 +24,9 @@ const BoxRegular=styled.div`
     height: 60vh;
     width: 60vh;
     border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const BoxPremium=styled.div`
     box-shadow: 0px 0px 20px -8px #fffafabf;
@@ -29,10 +35,16 @@ const BoxPremium=styled.div`
     width: 60vh;
     padding: 3rem 1.3rem;
     border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 const Data=styled.div`
     display: flex;
     flex-direction: column;
+   
+    align-items: center;
+    
 `
 const Heading=styled.h1`
     font-size: 1.5rem;
@@ -60,6 +72,7 @@ const Button=styled.button`
     height: 5vh;
     margin-bottom: 1.25rem;
     margin-top: 1.75rem;
+  
 `
 const ButtonFont=styled.span`
     font-size: 20px;

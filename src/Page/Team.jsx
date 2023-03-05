@@ -17,8 +17,7 @@ export const Team = () => {
     <TeamCard/>
     <TeamCard/>
     <TeamCard/>
-    <TeamCard/>
-  
+    <TeamCard/>  
     </Container>
   )
 }

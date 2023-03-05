@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
+
 import video from '../Images/video.mp4'
 
 const Container=styled.div`
@@ -36,12 +37,14 @@ background-color: orangered;
   position: absolute;
   top: 0.7rem;
 `
-const Head=styled.h1`
-  color: white;
-  font-size: 4rem;
+const Head=styled.span`
+  color: ${props=>props.color};
+  font-size: 3rem;
 font-family: sans-serif;
 letter-spacing: 0.2rem;
 text-transform: uppercase;
+
+text-align: center;
 `
 const HeadDes=styled.h1`
   font-size: 2rem;
@@ -132,7 +135,7 @@ export const AboutUs = () => {
     <Container>
     <Written>
     <ExploreText><LineCont style={{right: "6rem"}}/>Let's Expore<LineCont style={{left: "6rem"}}/></ExploreText>
-    <Head>Dijizen</Head>
+    <div  style={{marginTop:"2rem",marginBottom:"2rem"}}><Head color='aqua'>Tech</Head><Head color='white'>Develoopers</Head></div>
     <Paragraph data-text="Where we find solutions!">Where we find solutions!</Paragraph>
     </Written>
     <ImageCon>
@@ -157,6 +160,7 @@ export const AboutUs = () => {
 <SmallText>We are a team of experienced and dedicated professionals who specialize in creating innovative software solutions for businesses of all sizes.</SmallText>
      </Written>
     </Container>
+
     </>
   )
 }

@@ -10,7 +10,7 @@ const Container=styled.div`
     flex-direction: column;
     border: 1pt solid black;
     align-items: center;
-    background-color: rgba(50, 26, 114, 0.548);
+    background-color: rgb(4, 17, 59);
     border-radius: 1.0rem;
     width: 20vw;
     height: 50vh;
